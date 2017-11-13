@@ -1,0 +1,144 @@
+{
+    "meta": {
+        "section_names": {
+            "Basic Information": "",
+            "Review Overview": {
+                "2.1": "Scope of Review",
+                "2.2": "Role(s) of Review Provider",
+                "2.3": "Executive Summary of Review and/or Link to Full Review (if applicable)"
+            },
+            "Detailed Review": {
+                "3.1": "Use of Proceeds",
+                "3.2": "Process for Project Evaluation and Selection",
+                "3.3": "Management of Proceeds",
+                "3.4": "Reporting"
+            }
+        }
+    },
+    "form_data": {
+        "sections": {
+            "basic information": {
+                "issuer name": "",
+                "review provider's name": "",
+                "form completion date": ""
+            },
+            "2.1": {
+                "use of proceeds": false,
+                "process for project evaluation and selection": false,
+                "management of proceeds": false,
+                "reporting": false
+            },
+            "2.2": {
+                "consultancy (incl. 2nd opinion)": false,
+                "certification": false,
+                "verification": false,
+                "rating": false,
+                "other (please specify)": false
+            },
+            "2.3": "",
+            "3.1": {
+                "overall comment": "",
+                "use of proceeds": {
+                    "use of proceeds categiries as per gbp": {
+                        "renewable energy": false,
+                        "energy efficiency": false,
+                        "pollution prevention and control": false,
+                        "sustainable management of living natural resources": false,
+                        "terrestrial and aquatic biodiversity conservation": false,
+                        "clean transportation": false,
+                        "sustainable water management": false,
+                        "climate change adaptation": false,
+                        "eco-efficient products, production technologies and processes": false,
+                        "unknown at issuance but currently expected to conform with gbp categories, or other eligible areas not yet stated in gbps": false,
+                        "other (please specify)": false
+                    }
+                },
+                "environmental_taxonomy": ""
+            },
+            "3.2": {
+                "overall comment": "",
+                "evaluation and selection": {
+                    "defined and transparent criteria for projects eligible for green bond proceeds": false,
+                    "documented process to determine that projects fit within defined categories": false,
+                    "summary criteria for project evaluation and selection publicly available": false,
+                    "other (please specify)": false
+                },
+                "information on responsibilities accountability": {
+                    "evaluation / selection criteria subject to external advice or verification": false,
+                    "in-house assessment": false,
+                    "other (please specify)": false
+                }
+            },
+            "3.3": {
+                "overall comment": "",
+                "tracking of proceeds": {
+                    "green bond proceeds segregated or tracked by the issuer in a systematic manner": false,
+                    "disclosure of intended types of temporary investment instruments for unallocated proceeds": false,
+                    "other (please specify)": false
+                },
+                "additional disclosure": {
+                    "allocations to future investments only": false,
+                    "allocations to both existing and future investments": false,
+                    "allocation to individual disbursements": false,
+                    "allocation to a portfolio of disbursements": false,
+                    "disclosure of portfolio balance of unallocated proceeds": false,
+                    "other (please specify)": false
+                }
+            },
+            "3.4": {
+                "overall comment": "",
+                "use of proceeds reporting": {
+                    "project-by-project": false,
+                    "on a project portfolio basis": false,
+                    "linkage to individual bond(s)": false,
+                    "other (please specify)": false,
+                    "information reported": {
+                        "Allocated amounts": false,
+                        "GB financed share of total investment": false,
+                        "Other (please specify)": false
+                    },
+                    "frequency": {
+                        "annual": false,
+                        "semi-annual": false,
+                        "other (please specify)": false
+                    }
+                },
+                "impact_reporting": {
+                    "project-by-project": false,
+                    "on a project portfolio basis": false,
+                    "linkage to individual bond(s)": false,
+                    "other (please specify)": false,
+                    "frequency": {
+                        "annual": false,
+                        "semi-annual": false,
+                        "other (please specify)": false
+                    },
+                    "information reported": {
+                        "ghg emissions / Savings": false,
+                        "energy savings": false,
+                        "other esg indicators (please specify)": false
+                    }
+                },
+                "means disclosure": {
+                    "information published in financial report": false,
+                    "information published in sustainability report": false,
+                    "information published in ad hoc documents": false,
+                    "reporting reviewed (if yes, please specify which parts of the reporting are subject to external review)": false,
+                    "other (please specify)": false
+                }
+            },
+            "useful links": "",
+            "other external reviews": {
+                "types of review provided": {
+                    "consultancy (incl. 2nd opinion)": false,
+                    "certification": false,
+                    "verification / Audit": false,
+                    "rating": false,
+                    "other (please specify)": false
+                },
+                "provider": "",
+                "date_publication": ""
+            }
+        }
+    }
+}

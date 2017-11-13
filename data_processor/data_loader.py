@@ -8,6 +8,7 @@ from cStringIO import StringIO
 from elastic_search import ElasticSearch
 from entity.GBP import GBP
 import json
+from entity.Report import Report
 
 class DataLoader(object):
     def __init__(self, file_dir):
@@ -75,6 +76,38 @@ class DataLoader(object):
                 except:
                     print "Hyperlink error! Document " + str(i)
                     pass
+
+    def read_excel_file_data(self):
+        workbook = load_workbook(self.file_dir + 'files.xlsx')
+        first_sheet = workbook.get_sheet_names()[0]
+        worksheet = workbook.get_sheet_by_name(first_sheet)
+        for i, row in enumerate(worksheet.iter_rows()):
+            if i == 0:
+                continue
+            report_text = ""
+            form_text = ""
+            try:
+                report_text = self.read_pdf_file(self.file_dir + row[3].internal_value + "/" + row[1].internal_value + ".pdf")
+            except:
+                print "Cannot extract text from " + row[1].internal_value
+                pass
+            try:
+                form_text = self.read_pdf_file(self.file_dir + row[3].internal_value + "/" + row[2].internal_value + ".pdf")
+            except:
+                print "Cannot extract text from " + row[2].internal_value
+                pass
+            report = Report(row[0].internal_value, form_text, report_text)
+            if not self.es.check_document_exists(index="green_bond", doc="report", id=i):
+                self.es.add_document(i, json.dumps(report.__dict__))
+                print "Adding document " + str(i) + " succesfully!"
+            else:
+                doc = self.es.find_document(index="green_bond", doc="report", id=i)
+                if doc["_source"]["external_review_report"] == "" or doc["_source"]["external_review_report"] == "":
+                    self.es.update_document(index="green_bond", doc="report", id=i, data=json.dumps(report.__dict__))
+                    print "Update document " + str(i) + " succesfully!"
+            print "Document " + str(i) + " Finished"
+
+
 
     def read_pdf_file(self, pdf_file):
         rsrcmgr = PDFResourceManager()
