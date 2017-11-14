@@ -133,11 +133,14 @@ def fill_2_level_data(subsec_data, section, subsection, subsubsection, data):
                     if decimal_w == '&#9746;':
                         checked = True
                     ss.remove(ss[0])
-                    if ' '.join(ss).lower().find("other (please specify):") > -1:
-                        ws = "other (please specify):"
-                        if len(' '.join(ss).lower()) > len(ws):
+                    m = ' '.join(ss).lower().split(':')
+                    if ' '.join(ss).lower().find("other (please specify)") > -1:
+                        if len(m[1]) > 0:
                             checked = True
-                    data["form_data"]["sections"][section][subsection][subsubsection][' '.join(ss).lower()] = checked
+                    if len(m) > 1 and len(m[1]) > 0 or ' '.join(ss).lower().find("other (please specify)") > -1:
+                        data["form_data"]["sections"][section][subsection][subsubsection][m[0].strip()] = checked
+                    else:
+                        data["form_data"]["sections"][section][subsection][subsubsection][' '.join(ss).lower()] = checked
                     ss = []
 
 def fill_3_level_data(subsec_data, section, subsection, subsubsection,subsubsubsection, data):
@@ -161,11 +164,14 @@ def fill_3_level_data(subsec_data, section, subsection, subsubsection,subsubsubs
                     if decimal_w == '&#9746;':
                         checked = True
                     ss.remove(ss[0])
-                    if ' '.join(ss).lower().find("other (please specify):") > -1:
-                        ws = "other (please specify):"
-                        if len(' '.join(ss).lower()) > len(ws):
+                    m = ' '.join(ss).lower().split(':')
+                    if ' '.join(ss).lower().find("other (please specify)") > -1:
+                        if len(m[1]) > 0:
                             checked = True
-                    data["form_data"]["sections"][section][subsection][subsubsection][subsubsubsection][' '.join(ss).lower()] = checked
+                    if len(m) > 1 and len(m[1]) > 0 or ' '.join(ss).lower().find("other (please specify)") > -1:
+                        data["form_data"]["sections"][section][subsection][subsubsection][subsubsubsection][m[0].strip()] = checked
+                    else:
+                        data["form_data"]["sections"][section][subsection][subsubsection][subsubsubsection][' '.join(ss).lower()] = checked
                     ss = []
 
 
@@ -191,12 +197,14 @@ def fill_level_data(subsec_data, section, subsection, data):
                     if decimal_w == '&#9746;':
                         checked = True
                     ss.remove(ss[0])
-                    if ' '.join(ss).lower().find("other (please specify):") > -1:
-                        ws = "other (please specify):"
-                        if len(' '.join(ss).lower()) > len(ws):
+                    m = ' '.join(ss).lower().split(':')
+                    if ' '.join(ss).lower().find("other (please specify)") > -1:
+                        if len(m[1]) > 0:
                             checked = True
-
-                    data["form_data"]["sections"][section][subsection][' '.join(ss).lower()] = checked
+                    if len(m) > 1 and len(m[1]) > 0 or ' '.join(ss).lower().find("other (please specify)") > -1:
+                        data["form_data"]["sections"][section][subsection][m[0].strip()] = checked
+                    else:
+                        data["form_data"]["sections"][section][subsection][' '.join(ss).lower()] = checked
                     ss = []
 
 def extract_subsubsection(sec_data, subsection, subsections):
