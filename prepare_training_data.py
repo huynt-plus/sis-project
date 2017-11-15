@@ -134,13 +134,12 @@ def fill_2_level_data(subsec_data, section, subsection, subsubsection, data):
                         checked = True
                     ss.remove(ss[0])
                     m = ' '.join(ss).lower().split(':')
-                    if ' '.join(ss).lower().find("other (please specify)") > -1:
+                    if ' '.join(ss).lower().find("other (please specify)") == 0:
                         if len(m[1]) > 0:
                             checked = True
-                    if len(m) > 1 and len(m[1]) > 0 or ' '.join(ss).lower().find("other (please specify)") > -1:
-                        data["form_data"]["sections"][section][subsection][subsubsection][m[0].strip()] = checked
-                    else:
-                        data["form_data"]["sections"][section][subsection][subsubsection][' '.join(ss).lower()] = checked
+                    for field in data["form_data"]["sections"][section][subsection][subsubsection]:
+                        if field.lower().find(m[0]) == 0:
+                            data["form_data"]["sections"][section][subsection][subsubsection][field] = checked
                     ss = []
 
 def fill_3_level_data(subsec_data, section, subsection, subsubsection,subsubsubsection, data):
@@ -165,13 +164,12 @@ def fill_3_level_data(subsec_data, section, subsection, subsubsection,subsubsubs
                         checked = True
                     ss.remove(ss[0])
                     m = ' '.join(ss).lower().split(':')
-                    if ' '.join(ss).lower().find("other (please specify)") > -1:
+                    if ' '.join(ss).lower().find("other (please specify)") == 0:
                         if len(m[1]) > 0:
                             checked = True
-                    if len(m) > 1 and len(m[1]) > 0 or ' '.join(ss).lower().find("other (please specify)") > -1:
-                        data["form_data"]["sections"][section][subsection][subsubsection][subsubsubsection][m[0].strip()] = checked
-                    else:
-                        data["form_data"]["sections"][section][subsection][subsubsection][subsubsubsection][' '.join(ss).lower()] = checked
+                    for field in data["form_data"]["sections"][section][subsection][subsubsection][subsubsubsection]:
+                        if field.lower().find(m[0]) == 0:
+                            data["form_data"]["sections"][section][subsection][subsubsection][subsubsubsection][field] = checked
                     ss = []
 
 
@@ -198,13 +196,12 @@ def fill_level_data(subsec_data, section, subsection, data):
                         checked = True
                     ss.remove(ss[0])
                     m = ' '.join(ss).lower().split(':')
-                    if ' '.join(ss).lower().find("other (please specify)") > -1:
+                    if ' '.join(ss).lower().find("other (please specify)") == 0:
                         if len(m[1]) > 0:
                             checked = True
-                    if len(m) > 1 and len(m[1]) > 0 or ' '.join(ss).lower().find("other (please specify)") > -1:
-                        data["form_data"]["sections"][section][subsection][m[0].strip()] = checked
-                    else:
-                        data["form_data"]["sections"][section][subsection][' '.join(ss).lower()] = checked
+                    for field in data["form_data"]["sections"][section][subsection]:
+                        if field.lower().find(m[0]) == 0:
+                            data["form_data"]["sections"][section][subsection][field] = checked
                     ss = []
 
 def extract_subsubsection(sec_data, subsection, subsections):
@@ -263,7 +260,7 @@ if __name__ == '__main__':
     for file in green_and_social_bond_projects_files:
         filename = file.split('/')[4]
         name = filename.split('.')[0]
-        with open('./template/form_structure.json') as data_file:
+        with open('./template/form_structure-2.json') as data_file:
             data = json.load(data_file)
         try:
             xml_content = get_word_xml(file)
@@ -281,7 +278,7 @@ if __name__ == '__main__':
     for file in sustainalutics_files:
         filename = file.split('/')[4]
         name = filename.split('.')[0]
-        with open('./template/form_structure.json') as data_file:
+        with open('./template/form_structure-2.json') as data_file:
             data = json.load(data_file)
         try:
             xml_content = get_word_xml(file)

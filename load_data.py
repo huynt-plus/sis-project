@@ -20,7 +20,7 @@ def load_all_use_of_proceeds():
 				continue
 		try:
 			#edit here to get the expected field
-			if (data["form_data"]["sections"]["Review Overview"]["Scope of Review"]["use of proceeds"]) == True:
+			if (data["form_data"]["sections"]["Review Overview"]["Scope of Review"]["Use of proceeds"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -59,7 +59,7 @@ def load_all_use_of_proceeds_Detailed_Review_Reporting_Use_of_Proceeds_Reporting
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Reporting"]["Use of Proceeds Reporting"]["linkage to individual bond(s)"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Reporting"]["Use of Proceeds Reporting"]["Linkage to individual bond(s)"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -94,7 +94,7 @@ def load_Review_Overview__Roles_of_Review_Provider_certification():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["certification"]) == True:
+			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["Certification"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -129,7 +129,7 @@ def load_Review_Overview__Roles_of_Review_Provider_consultancy():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["consultancy (incl. 2 nd opinion)"]) == True:
+			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["Consultancy (incl. 2 nd opinion)"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -164,7 +164,7 @@ def load_Review_Overview__Roles_of_Review_Provider_other():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["other (please specify)"]) == True:
+			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["Other (please specify)"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -199,7 +199,7 @@ def load_Review_Overview__Roles_of_Review_Provider_rating():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["rating"]) == True:
+			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["Rating"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -234,7 +234,7 @@ def load_Review_Overview__Roles_of_Review_Provider_verification():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["verification"]) == True:
+			if (data["form_data"]["sections"]["Review Overview"]["Role(s) of Review Provider"]["Verification"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -270,7 +270,7 @@ def load_Detailed_Review__Use_of_Proceeds_clean_transportation():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["clean transportation"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Clean transportation"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -305,7 +305,7 @@ def load_Detailed_Review__Use_of_Proceeds_climate_change_adaptation():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["climate change adaptation"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Climate change adaptation"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -340,7 +340,7 @@ def load_Detailed_Review__Use_of_Proceeds_eco_efficient():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["eco-efficient products, production"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Eco-efficient products, production technologies and processes"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -375,7 +375,7 @@ def load_Detailed_Review__Use_of_Proceeds_energy_efficiency():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["energy efficiency"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Energy efficiency"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -411,7 +411,7 @@ def load_Detailed_Review__Use_of_Proceeds_other():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["other (please specify)"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Other (please specify)"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -446,7 +446,7 @@ def load_Detailed_Review__Use_of_Proceeds_pollution_prevention():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["pollution prevention and control"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Pollution prevention and control"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -481,7 +481,7 @@ def load_Detailed_Review__Use_of_Proceeds_renewable_energy():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["renewable energy"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Renewable energy"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -516,7 +516,7 @@ def load_Detailed_Review__Use_of_Proceeds_sustainable_management():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["sustainable management of living"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Sustainable management of living natural resources"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -551,7 +551,7 @@ def load_Detailed_Review__Use_of_Proceeds_sustainable_water_management():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["sustainable water management"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Sustainable water management"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -586,7 +586,7 @@ def load_Detailed_Review__Use_of_Proceeds_terrestrial():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["terrestrial and aquatic biodiversity"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Terrestrial and aquatic biodiversity conservation"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -621,7 +621,7 @@ def load_Detailed_Review__Use_of_Proceeds_unknown():
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["unknown at issuance but currently expected"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Use of Proceeds"]["Use of Proceeds Categories as per GBP"]["Unknown at issuance but currently expected to conform with GBP categories, or other eligible areas not yet stated in GBPs"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -656,7 +656,7 @@ def load_Detailed_Review__Process_for_Project_Evaluation_and_Selection_defined()
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Process for Project Evaluation and Selection"]["Evaluation and Selection"]["defined and transparent criteria for"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Process for Project Evaluation and Selection"]["Evaluation and Selection"]["Defined and transparent criteria for projects eligible for Green Bond proceeds"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -691,7 +691,7 @@ def load_Detailed_Review__Process_for_Project_Evaluation_and_Selection_documente
 				print("Json load error",sys.exc_info(), data_file)
 				continue
 		try:
-			if (data["form_data"]["sections"]["Detailed Review"]["Process for Project Evaluation and Selection"]["Evaluation and Selection"]["documented process to determine that"]) == True:
+			if (data["form_data"]["sections"]["Detailed Review"]["Process for Project Evaluation and Selection"]["Evaluation and Selection"]["Documented process to determine that projects fit within defined categories"]) == True:
 				y = 1
 			else:
 				y = 0
@@ -717,24 +717,24 @@ def load_Detailed_Review__Process_for_Project_Evaluation_and_Selection_documente
 #load_all_use_of_proceeds()
 
 # chu uncomment cac ham phia duoi de test nha
-# load_all_use_of_proceeds_Detailed_Review_Reporting_Use_of_Proceeds_Reporting_linkage_to_individual_bond()
-# load_Review_Overview__Roles_of_Review_Provider_certification()
-# load_Review_Overview__Roles_of_Review_Provider_consultancy()
-# load_Review_Overview__Roles_of_Review_Provider_other()
-# load_Review_Overview__Roles_of_Review_Provider_rating()
-# load_Review_Overview__Roles_of_Review_Provider_verification()
-# load_Detailed_Review__Use_of_Proceeds_clean_transportation()
-# load_Detailed_Review__Use_of_Proceeds_climate_change_adaptation()
-# load_Detailed_Review__Use_of_Proceeds_eco_efficient()
-# load_Detailed_Review__Use_of_Proceeds_energy_efficiency()
-# load_Detailed_Review__Use_of_Proceeds_other()
-# load_Detailed_Review__Use_of_Proceeds_pollution_prevention()
-# load_Detailed_Review__Use_of_Proceeds_renewable_energy()
-# load_Detailed_Review__Use_of_Proceeds_sustainable_management()
-# load_Detailed_Review__Use_of_Proceeds_sustainable_water_management()
-# load_Detailed_Review__Use_of_Proceeds_terrestrial()
-# load_Detailed_Review__Use_of_Proceeds_unknown()
-# load_Detailed_Review__Process_for_Project_Evaluation_and_Selection_defined()
+load_all_use_of_proceeds_Detailed_Review_Reporting_Use_of_Proceeds_Reporting_linkage_to_individual_bond()
+load_Review_Overview__Roles_of_Review_Provider_certification()
+load_Review_Overview__Roles_of_Review_Provider_consultancy()
+load_Review_Overview__Roles_of_Review_Provider_other()
+load_Review_Overview__Roles_of_Review_Provider_rating()
+load_Review_Overview__Roles_of_Review_Provider_verification()
+load_Detailed_Review__Use_of_Proceeds_clean_transportation()
+load_Detailed_Review__Use_of_Proceeds_climate_change_adaptation()
+load_Detailed_Review__Use_of_Proceeds_eco_efficient()
+load_Detailed_Review__Use_of_Proceeds_energy_efficiency()
+load_Detailed_Review__Use_of_Proceeds_other()
+load_Detailed_Review__Use_of_Proceeds_pollution_prevention()
+load_Detailed_Review__Use_of_Proceeds_renewable_energy()
+load_Detailed_Review__Use_of_Proceeds_sustainable_management()
+load_Detailed_Review__Use_of_Proceeds_sustainable_water_management()
+load_Detailed_Review__Use_of_Proceeds_terrestrial()
+load_Detailed_Review__Use_of_Proceeds_unknown()
+load_Detailed_Review__Process_for_Project_Evaluation_and_Selection_defined()
 load_Detailed_Review__Process_for_Project_Evaluation_and_Selection_documented()
 
 

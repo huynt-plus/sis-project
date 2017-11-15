@@ -49,7 +49,7 @@
                     "Reporting": false
                 },
                 "Role(s) of Review Provider": {
-                    "Consultancy (incl. 2 nd opinion)": false,
+                    "Consultancy (incl. 2nd opinion)": false,
                     "Certification": false,
                     "Verification": false,
                     "Rating": false,
@@ -145,7 +145,7 @@
                 },
                 "Specify other external reviews available, if appropriate": {
                     "Type(s) of Review provided": {
-                        "Consultancy (incl. 2 nd opinion)": false,
+                        "Consultancy (incl. 2nd opinion)": false,
                         "Certification": false,
                         "Verification / Audit": false,
                         "Rating": false,
